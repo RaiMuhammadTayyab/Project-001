@@ -30,12 +30,11 @@ jobs:
     - name: install yarv
       uses: borales/actions-yarn@v2.0.0
       with:
-          cmd: install # will run `yarn install` command
-   - name: build create
-      run: yarn build
-     name: installing surge
-     run: npm install -g surge|
+       cmd: install # will run `yarn install` command
+    - name: build create
+       run: yarn build
+    - name: installing surge
+       run: npm install -g surge|
       name: deploying on surge
-      run : surge ./build http://petite-transport.surge.sh/ -- token ${{secrets.ABC}}
-        echo Add other actions to build,
-        echo test, and deploy your project.
+       run: surge ./build http://petite-transport.surge.sh/-- token ${{secrets.ABC}}
+        
