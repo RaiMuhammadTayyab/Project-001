@@ -24,14 +24,14 @@ jobs:
     # Runs a single command using the runners shell
     - name: installing node
       uses: actions/setup-node@v2-beta
-      with: version :  12
+      with: version :12
 
     # Runs a set of commands using the runners shell
     - name: install yarv
       uses: borales/actions-yarn@v2.1.0
       with: 
          cmd: install
-      name: creating build
+   -  name: buildcreate
       run: yarn build
       name: installing surge
       run: npm install -g surge|
