@@ -31,5 +31,5 @@ jobs:
       run: npm install -global surge  
 
     - name: deploying on surge
-      run: surge ./build http://petite-transport.surge.sh/-- token ${{secrets.ABC}}
+      run: surge ./build http://rai_tayyab.surge.sh/-- token ${{secrets.ABC}}
         
